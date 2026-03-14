@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#E8C96A" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#D4A843" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam1" x1="50%" y1="0%" x2="20%" y2="100%">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam2" x1="50%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="podium" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B3FA0"/>
+      <stop offset="100%" stop-color="#5A3488"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="500" fill="#FAF7F2" rx="12"/>
+
+  <!-- Radial glow behind speaker -->
+  <circle cx="300" cy="220" r="250" fill="url(#glow)"/>
+
+  <!-- Light beams radiating outward -->
+  <polygon points="300,140 180,420 220,420" fill="url(#beam1)" opacity="0.5"/>
+  <polygon points="300,140 380,420 420,420" fill="url(#beam2)" opacity="0.5"/>
+  <polygon points="300,140 100,380 150,400" fill="url(#beam1)" opacity="0.3"/>
+  <polygon points="300,140 500,380 450,400" fill="url(#beam2)" opacity="0.3"/>
+  <polygon points="300,140 50,320 100,350" fill="url(#beam1)" opacity="0.15"/>
+  <polygon points="300,140 550,320 500,350" fill="url(#beam2)" opacity="0.15"/>
+
+  <!-- Stylized speaker figure -->
+  <!-- Head -->
+  <circle cx="300" cy="180" r="28" fill="#6B3FA0"/>
+  <!-- Body -->
+  <path d="M300,208 L300,300" stroke="#6B3FA0" stroke-width="6" stroke-linecap="round"/>
+  <!-- Arms raised in keynote gesture -->
+  <path d="M300,240 L250,210" stroke="#6B3FA0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300,240 L350,210" stroke="#6B3FA0" stroke-width="5" stroke-linecap="round"/>
+  <!-- Legs -->
+  <path d="M300,300 L275,360" stroke="#6B3FA0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300,300 L325,360" stroke="#6B3FA0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Podium -->
+  <rect x="250" y="355" width="100" height="60" rx="6" fill="url(#podium)" opacity="0.8"/>
+
+  <!-- Audience silhouettes (small circles) -->
+  <circle cx="120" cy="440" r="14" fill="#6B3FA0" opacity="0.25"/>
+  <circle cx="160" cy="445" r="12" fill="#6B3FA0" opacity="0.2"/>
+  <circle cx="200" cy="448" r="13" fill="#6B3FA0" opacity="0.22"/>
+  <circle cx="240" cy="450" r="11" fill="#6B3FA0" opacity="0.18"/>
+  <circle cx="360" cy="450" r="11" fill="#6B3FA0" opacity="0.18"/>
+  <circle cx="400" cy="448" r="13" fill="#6B3FA0" opacity="0.22"/>
+  <circle cx="440" cy="445" r="12" fill="#6B3FA0" opacity="0.2"/>
+  <circle cx="480" cy="440" r="14" fill="#6B3FA0" opacity="0.25"/>
+
+  <!-- Sparkle accents -->
+  <text x="220" y="160" font-size="16" fill="#D4A843" opacity="0.6">✦</text>
+  <text x="370" y="170" font-size="12" fill="#D4A843" opacity="0.5">✦</text>
+  <text x="180" y="200" font-size="10" fill="#D4A843" opacity="0.4">✦</text>
+  <text x="410" y="190" font-size="14" fill="#D4A843" opacity="0.5">✦</text>
+  <text x="150" y="260" font-size="8" fill="#D4A843" opacity="0.3">✦</text>
+  <text x="440" y="250" font-size="8" fill="#D4A843" opacity="0.3">✦</text>
+</svg>
