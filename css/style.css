@@ -239,8 +239,8 @@ img {
    HERO SECTION
    ============================================ */
 .hero {
-  padding-top: 100px; /* 72px for fixed header + 28px breathing room */
-  padding-bottom: 28px;
+  padding-top: 140px; /* 72px for fixed header + generous breathing room */
+  padding-bottom: 80px;
   min-height: auto;
   display: flex;
   align-items: center;
