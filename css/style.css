@@ -448,22 +448,21 @@ img {
 }
 
 .leaders .speaking-grid {
-  align-items: stretch;
+  align-items: start;
 }
 
 .leaders .speaking-grid > div:last-child {
   display: flex;
   justify-content: center;
-  align-items: stretch;
 }
 
-.leaders .speaking-grid > div:last-child .post-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.leaders .speaking-grid > div:last-child img.post-image {
+  max-height: 620px;
+  width: auto;
+  object-fit: contain;
   border-radius: 12px;
-  max-width: 100%;
   margin: 0;
+  box-shadow: none;
 }
 
 /* Women's Haven Callout */
