@@ -17,7 +17,7 @@ function sendAutoReply(e) {
   var body = "Hi " + name + ",\n\n"
     + "Thank you so much for reaching out - I am truly grateful to hear from you.\n\n"
     + "I read every message personally, and I will get back to you very soon.\n\n"
-    + "In the meantime, I hope you know: the fact that you took this step says something beautiful about you.\n\n"
+    + "In the meantime, the fact that you reached out says something beautiful about you.\n\n"
     + "With gratitude,\n"
     + "Liz Ellis\n"
     + "Amplify Light\n"

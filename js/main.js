@@ -59,7 +59,7 @@ if (contactForm) {
           thankYou.className = 'thank-you-message';
           thankYou.innerHTML = '<h3>Thank you so much!</h3>'
             + '<p>I\'m truly grateful you reached out. I read every message personally and will get back to you very soon.</p>'
-            + '<p>In the meantime, I hope you know: the fact that you took this step says something beautiful about you.</p>'
+            + '<p>In the meantime, the fact that you reached out says something beautiful about you.</p>'
             + '<p style="margin-top: 24px;"><em>With gratitude,<br>Liz</em></p>';
           contactForm.parentNode.appendChild(thankYou);
         } else {

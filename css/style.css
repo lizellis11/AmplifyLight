@@ -448,17 +448,20 @@ img {
 }
 
 .leaders .speaking-grid {
-  align-items: start;
+  align-items: stretch;
 }
 
 .leaders .speaking-grid > div:last-child {
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 
 .leaders .speaking-grid > div:last-child .post-image {
-  width: auto;
-  max-height: 620px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
   max-width: 100%;
   margin: 0;
 }
