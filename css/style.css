@@ -339,12 +339,21 @@ img {
   font-weight: 700;
 }
 
+.about-links {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
 .social-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--purple);
   opacity: 0.5;
+  font-size: 0.85rem;
+  font-weight: 600;
   transition: opacity 0.3s ease, color 0.3s ease;
-  margin-top: 8px;
 }
 
 .social-link:hover {
