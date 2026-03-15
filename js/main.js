@@ -38,32 +38,36 @@ if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const formData = new FormData(contactForm);
     const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
 
-    fetch(contactForm.action, {
+    const formData = new FormData(contactForm);
+
+    fetch('https://formspree.io/f/mlgpwgaw', {
       method: 'POST',
       body: formData,
       headers: { 'Accept': 'application/json' }
     })
-      .then(response => {
+      .then(function (response) {
         if (response.ok) {
+          // Show warm thank-you message
           contactForm.reset();
-          submitBtn.textContent = 'Sent! ✓';
-          setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-          }, 3000);
+          contactForm.style.display = 'none';
+
+          var thankYou = document.createElement('div');
+          thankYou.className = 'thank-you-message';
+          thankYou.innerHTML = '<h3>Thank you so much!</h3>'
+            + '<p>I\'m truly grateful you reached out. I read every message personally and will get back to you very soon.</p>'
+            + '<p>In the meantime, I hope you know: the fact that you took this step says something beautiful about you.</p>'
+            + '<p style="margin-top: 24px;"><em>With gratitude,<br>Liz</em></p>';
+          contactForm.parentNode.appendChild(thankYou);
         } else {
           submitBtn.textContent = 'Error — try again';
           submitBtn.disabled = false;
         }
       })
-      .catch(() => {
+      .catch(function () {
         submitBtn.textContent = 'Error — try again';
         submitBtn.disabled = false;
       });

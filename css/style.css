@@ -447,9 +447,25 @@ img {
   background-color: var(--lavender);
 }
 
+.leaders .speaking-grid {
+  align-items: start;
+}
+
+.leaders .speaking-grid > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.leaders .speaking-grid > div:last-child .post-image {
+  width: auto;
+  max-height: 620px;
+  max-width: 100%;
+  margin: 0;
+}
+
 /* Women's Haven Callout */
 .haven-callout {
-  margin-top: 56px;
+  margin-top: 80px;
   background: var(--white);
   border-radius: 16px;
   padding: 48px;
@@ -595,6 +611,25 @@ img {
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
+}
+
+/* Thank-you message after form submission */
+.thank-you-message {
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.thank-you-message h3 {
+  font-size: 1.5rem;
+  color: var(--purple);
+  margin-bottom: 16px;
+}
+
+.thank-you-message p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto 12px auto;
 }
 
 /* Calendly placeholder */
