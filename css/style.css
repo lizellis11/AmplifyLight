@@ -961,6 +961,7 @@ img {
   /* Mobile navigation */
   .nav-toggle {
     display: block;
+    padding: 12px;
   }
 
   @keyframes slideDown {
@@ -983,13 +984,87 @@ img {
     background-color: var(--ivory);
     flex-direction: column;
     padding: 24px;
-    gap: 20px;
+    gap: 8px;
     box-shadow: 0 4px 12px var(--shadow);
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 12px 16px;
+    display: block;
   }
 
   .nav-links.active {
     display: flex;
     animation: slideDown 0.3s ease-out;
+  }
+
+  /* Touch-friendly font sizes */
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .post-date {
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .testimonial-card .attribution {
+    font-size: 1rem;
+  }
+
+  .workshop-context {
+    font-size: 1rem;
+  }
+
+  /* Touch-friendly social links */
+  .social-link {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  /* Touch-friendly read more links */
+  .post-card-body .read-more {
+    font-size: 1rem;
+    padding: 8px 0;
+    display: inline-block;
+  }
+
+  /* Full-width CTA buttons on mobile */
+  .speaking-description .btn,
+  .haven-callout .btn,
+  .hero-text .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer readability */
+  .footer-line {
+    font-size: 1rem;
+  }
+
+  .footer-brand {
+    font-size: 1rem;
+  }
+
+  .footer-tagline {
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    padding: 24px 0;
+  }
+
+  /* Calendly widget sizing */
+  .calendly-inline-widget {
+    min-width: 100% !important;
+    height: 600px !important;
   }
 
   .post-body {
@@ -998,5 +1073,28 @@ img {
 
   .post-header {
     padding-top: 100px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .haven-callout {
+    padding: 32px 24px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
   }
 }
