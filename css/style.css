@@ -739,7 +739,7 @@ img {
    FOOTER
    ============================================ */
 .site-footer {
-  background-color: var(--purple);
+  background-color: var(--purple-dark);
   color: var(--white);
   padding: 16px 0;
 }
