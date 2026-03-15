@@ -361,6 +361,22 @@ img {
   color: var(--gold);
 }
 
+/* Angel wordmark button */
+.angel-wordmark {
+  height: 16px;
+  width: auto;
+  filter: invert(24%) sepia(30%) saturate(2000%) hue-rotate(250deg) brightness(60%);
+  opacity: 0.5;
+  transition: all 0.4s ease;
+}
+.angel-link:hover .angel-wordmark {
+  opacity: 1;
+  filter: invert(55%) sepia(60%) saturate(500%) hue-rotate(10deg) brightness(90%);
+}
+.angel-link {
+  opacity: 1 !important;
+}
+
 
 /* ============================================
    SPEAKING SECTION
