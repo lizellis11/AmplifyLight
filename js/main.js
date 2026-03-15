@@ -67,9 +67,9 @@ if (contactForm) {
           thankYou.setAttribute('role', 'status');
           thankYou.setAttribute('aria-live', 'polite');
           thankYou.innerHTML = '<h3>Thank you so much!</h3>'
-            + '<p>I\'m truly grateful you reached out. I read every message personally and will get back to you very soon.</p>'
-            + '<p>In the meantime, the fact that you reached out says something beautiful about you.</p>'
-            + '<p style="margin-top: 24px;"><em>With gratitude,<br>Liz</em></p>';
+            + '<p>Something brought you here — and you were brave enough to listen to it.</p>'
+            + '<p>I read every message personally and will be in touch soon. Whatever you\'re navigating, you don\'t have to figure it out alone.</p>'
+            + '<p class="thank-you-sign-off"><em>With gratitude,<br>Liz</em></p>';
           contactForm.parentNode.appendChild(thankYou);
         } else {
           submitBtn.textContent = 'Error — try again';
