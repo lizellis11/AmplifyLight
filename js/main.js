@@ -10,6 +10,8 @@ const navLinks = document.querySelector('.nav-links');
 if (navToggle) {
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    var isOpen = navLinks.classList.contains('active');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
   // Close mobile menu when a link is tapped
@@ -23,10 +25,14 @@ if (navToggle) {
 // --- Smooth scroll for anchor links (fallback for older browsers) ---
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
+    var href = this.getAttribute('href');
+    if (href === '#') return;
+    var target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
     }
   });
 });
@@ -57,6 +63,8 @@ if (contactForm) {
 
           var thankYou = document.createElement('div');
           thankYou.className = 'thank-you-message';
+          thankYou.setAttribute('role', 'status');
+          thankYou.setAttribute('aria-live', 'polite');
           thankYou.innerHTML = '<h3>Thank you so much!</h3>'
             + '<p>I\'m truly grateful you reached out. I read every message personally and will get back to you very soon.</p>'
             + '<p>In the meantime, the fact that you reached out says something beautiful about you.</p>'

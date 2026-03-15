@@ -23,11 +23,11 @@
 <body>
 
   <!-- Skip to main content for accessibility -->
-  <a href="#about" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ========== HEADER / NAV ========== -->
   <header class="site-header">
-    <nav class="nav container">
+    <nav class="nav container" aria-label="Main navigation">
       <a href="#" class="nav-logo">Amplify Light</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -38,12 +38,14 @@
         <li><a href="#contact" class="btn btn-primary">Book Me</a></li>
       </ul>
       <!-- Mobile hamburger -->
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
+
+  <main id="main-content">
 
   <!-- ========== HERO ========== -->
   <section class="hero">
@@ -234,13 +236,17 @@
         <!-- Calendly -->
         <div class="contact-calendly">
           <h3>Schedule a Call</h3>
-          <div class="calendly-inline-widget" data-url="https://calendly.com/lizelliscoaching?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/lizelliscoaching?hide_gdpr_banner=1" style="min-width:320px;height:700px;" aria-label="Schedule a call with Liz">
+            <p><a href="https://calendly.com/lizelliscoaching" target="_blank" rel="noopener noreferrer">Schedule a call on Calendly</a></p>
+          </div>
           <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
       </div>
     </div>
   </section>
 
+
+  </main>
 
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer">

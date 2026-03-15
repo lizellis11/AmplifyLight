@@ -14,9 +14,11 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- ========== HEADER / NAV ========== -->
   <header class="site-header">
-    <nav class="nav container">
+    <nav class="nav container" aria-label="Main navigation">
       <a href="../index.html" class="nav-logo">Amplify Light</a>
       <ul class="nav-links">
         <li><a href="../index.html#about">About</a></li>
@@ -26,12 +28,13 @@
         <li><a href="../index.html#contact">Contact</a></li>
         <li><a href="../index.html#contact" class="btn btn-primary">Book Me</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
+  <main id="main-content">
   <!-- ========== POST CONTENT ========== -->
   <div class="container">
     <div class="post-header">
@@ -48,6 +51,8 @@
       <p>I'd love to know: What values are you aspiring to or maybe practicing during this season of life?</p>
     </article>
   </div>
+
+  </main>
 
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer">

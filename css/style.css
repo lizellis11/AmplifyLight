@@ -6,7 +6,8 @@
 :root {
   --purple: #6B3FA0;
   --purple-dark: #5A3488;
-  --gold: #D4A843;
+  --gold: #B8860B;
+  --gold-text: #9A7209;
   --gold-light: #E8C96A;
   --ivory: #FAF7F2;
   --charcoal: #2D2D2D;
@@ -46,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 img {
@@ -99,11 +100,10 @@ img {
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: var(--charcoal);
+  color: #4A4A4A;
   text-align: center;
   max-width: 600px;
   margin: 0 auto 48px auto;
-  opacity: 0.8;
 }
 
 /* Placeholder content marker */
@@ -268,13 +268,13 @@ img {
 }
 
 .hero-text h1 .accent {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .hero-text .tagline {
   font-size: 1.25rem;
   margin-bottom: 32px;
-  opacity: 0.85;
+  color: #4A4A4A;
   max-width: 500px;
 }
 
@@ -528,8 +528,7 @@ img {
 
 .post-card-body .post-date {
   font-size: 0.85rem;
-  color: var(--purple);
-  opacity: 0.6;
+  color: #8B6BB0;
   margin-bottom: 8px;
 }
 
@@ -541,7 +540,7 @@ img {
 
 .post-card-body p {
   font-size: 0.95rem;
-  opacity: 0.8;
+  color: #4A4A4A;
   margin-bottom: 16px;
 }
 
@@ -552,7 +551,7 @@ img {
 }
 
 .post-card-body .read-more:hover {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .text-center {
@@ -607,8 +606,9 @@ img {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
   border-color: var(--purple);
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .form-group textarea {
@@ -676,8 +676,8 @@ img {
 
 .footer-brand {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  color: var(--gold);
+  font-size: 1.4rem;
+  color: var(--gold-light);
 }
 
 .footer-social {
@@ -694,13 +694,13 @@ img {
 
 .footer-social a:hover {
   opacity: 1;
-  color: var(--gold);
+  color: var(--gold-light);
 }
 
 .footer-bottom {
   text-align: center;
   font-size: 0.85rem;
-  opacity: 0.6;
+  opacity: 0.8;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 24px;
 }
@@ -734,25 +734,24 @@ img {
 
 .blog-list-item .post-date {
   font-size: 0.85rem;
-  color: var(--purple);
-  opacity: 0.6;
+  color: #8B6BB0;
 }
 
-.blog-list-item h3 {
+.blog-list-item h2 {
   font-size: 1.4rem;
   margin: 8px 0 12px 0;
 }
 
-.blog-list-item h3 a {
+.blog-list-item h2 a {
   color: var(--charcoal);
 }
 
-.blog-list-item h3 a:hover {
+.blog-list-item h2 a:hover {
   color: var(--purple);
 }
 
 .blog-list-item p {
-  opacity: 0.8;
+  color: #4A4A4A;
   margin-bottom: 12px;
 }
 
@@ -773,8 +772,7 @@ img {
 }
 
 .post-header .post-date {
-  color: var(--purple);
-  opacity: 0.5;
+  color: #8B6BB0;
 }
 
 .post-body {
@@ -807,7 +805,6 @@ img {
   margin: 32px 0;
   font-style: italic;
   color: var(--purple);
-  opacity: 0.85;
 }
 
 .back-link {
