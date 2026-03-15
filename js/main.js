@@ -18,6 +18,7 @@ if (navToggle) {
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
