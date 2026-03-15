@@ -101,7 +101,7 @@ img {
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #4A4A4A;
+  color: #3D3D3D;
   text-align: center;
   max-width: 600px;
   margin: 0 auto 48px auto;
@@ -350,7 +350,7 @@ img {
   align-items: center;
   gap: 6px;
   color: var(--purple);
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 0.85rem;
   font-weight: 600;
   transition: opacity 0.3s ease, color 0.3s ease;
@@ -418,7 +418,7 @@ img {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 1.1rem;
-  color: var(--gold-text);
+  color: #8A6914;
   margin-bottom: 16px;
 }
 
@@ -574,7 +574,7 @@ img {
 
 
 /* ============================================
-   REFLECTIONS / BLOG PREVIEW SECTION
+   SPARKS / BLOG PREVIEW SECTION
    ============================================ */
 .reflections {
   background-color: var(--lavender);
@@ -608,7 +608,7 @@ img {
 
 .post-card-body .post-date {
   font-size: 0.85rem;
-  color: #8B6BB0;
+  color: #6B4F8A;
   margin-bottom: 8px;
 }
 
@@ -761,7 +761,7 @@ img {
 }
 
 .footer-sep {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-tagline {
@@ -805,7 +805,7 @@ img {
 
 .blog-list-item .post-date {
   font-size: 0.85rem;
-  color: #8B6BB0;
+  color: #6B4F8A;
 }
 
 .blog-list-item h2 {
@@ -843,7 +843,7 @@ img {
 }
 
 .post-header .post-date {
-  color: #8B6BB0;
+  color: #6B4F8A;
 }
 
 .post-body {
