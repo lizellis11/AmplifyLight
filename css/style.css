@@ -374,18 +374,6 @@ img {
   margin-top: 24px;
 }
 
-/* Video placeholder */
-.video-placeholder {
-  background-color: var(--lavender);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
-  font-style: italic;
-  color: var(--purple);
-  opacity: 0.6;
-}
 
 /* Testimonials */
 .testimonials {
@@ -634,21 +622,6 @@ img {
   margin: 0 auto 12px auto;
 }
 
-/* Calendly placeholder */
-.calendly-placeholder {
-  background: var(--white);
-  border: 2px dashed var(--lavender);
-  border-radius: 12px;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--purple);
-  font-style: italic;
-  opacity: 0.6;
-  padding: 24px;
-  text-align: center;
-}
 
 
 /* ============================================
