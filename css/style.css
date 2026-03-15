@@ -339,6 +339,19 @@ img {
   font-weight: 700;
 }
 
+.social-link {
+  display: inline-block;
+  color: var(--purple);
+  opacity: 0.5;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  margin-top: 8px;
+}
+
+.social-link:hover {
+  opacity: 1;
+  color: var(--gold);
+}
+
 
 /* ============================================
    SPEAKING SECTION
@@ -681,67 +694,44 @@ img {
 .site-footer {
   background-color: var(--purple);
   color: var(--white);
-  padding: 48px 0 24px 0;
+  padding: 16px 0;
 }
 
-.footer-content {
+.footer-line {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.footer-brand-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
 }
 
 .footer-brand {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   color: var(--gold);
+  font-weight: 700;
 }
 
-.footer-social {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-social a {
-  color: var(--white);
-  font-size: 0.95rem;
-  opacity: 0.8;
-  transition: opacity 0.3s ease, color 0.3s ease;
-}
-
-.footer-social a:hover {
-  opacity: 1;
-  color: var(--gold);
-  transform: scale(1.05);
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: 0.8;
-  padding-top: 0;
+.footer-sep {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-tagline {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  margin-bottom: 24px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* Star icon in footer */
-.lighthouse-icon {
-  font-size: 1.8rem;
+.footer-line a {
+  color: var(--white);
+  opacity: 0.8;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-line a:hover {
+  opacity: 1;
   color: var(--gold);
 }
 
@@ -894,10 +884,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .footer-content {
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
+  .footer-line {
+    gap: 8px;
   }
 
   .leaders {
