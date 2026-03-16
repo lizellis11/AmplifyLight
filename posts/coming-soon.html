@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon — Amplify Light</title>
+  <meta name="description" content="This spark is still being written. Check back soon for new content from Amplify Light.">
+
+  <meta property="og:title" content="Coming Soon — Amplify Light">
+  <meta property="og:description" content="This spark is still being written. Check back soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://amplifylight.org/images/flower.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' https://amplifylight.org data:;">
+
+  <style>
+    .coming-soon {
+      text-align: center;
+      padding-top: 160px;
+      padding-bottom: 120px;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Animated sprouting seedling */
+    .coming-soon-graphic {
+      margin-bottom: 40px;
+    }
+
+    .coming-soon-graphic svg {
+      width: 160px;
+      height: 160px;
+    }
+
+    /* Gentle floating animation on the leaves */
+    @keyframes sway {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+
+    .leaf-group {
+      transform-origin: 80px 120px;
+      animation: sway 4s ease-in-out infinite;
+    }
+
+    /* Soft pulse on the sparkle */
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    .sparkle {
+      animation: sparkle 3s ease-in-out infinite;
+    }
+
+    .coming-soon h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--purple);
+      margin-bottom: 16px;
+    }
+
+    .coming-soon p {
+      font-size: 1.15rem;
+      color: #4A4A4A;
+      max-width: 440px;
+      margin: 0 auto 32px auto;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .coming-soon {
+        padding-top: 120px;
+        padding-bottom: 80px;
+      }
+
+      .coming-soon h1 {
+        font-size: 1.8rem;
+      }
+
+      .coming-soon-graphic svg {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">Amplify Light</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#organizations">For Organizations</a></li>
+        <li><a href="../index.html#leaders">For Leaders</a></li>
+        <li><a href="../index.html#for-women">For Women</a></li>
+        <li><a href="../blog.html">Sparks</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../index.html#contact" class="btn btn-primary">Start Now</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <div class="coming-soon">
+
+        <!-- Sprouting seedling illustration -->
+        <div class="coming-soon-graphic" aria-hidden="true">
+          <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+            <!-- Soil -->
+            <ellipse cx="80" cy="138" rx="50" ry="10" fill="#8B7355" opacity="0.3"/>
+
+            <!-- Stem -->
+            <path d="M80 135 Q78 110 80 85" stroke="#6B8F5E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- Left leaf -->
+            <g class="leaf-group">
+              <path d="M80 105 Q60 90 50 70 Q65 80 80 95" fill="#7CAA6E" opacity="0.85"/>
+              <path d="M80 105 Q62 88 52 72" stroke="#6B8F5E" stroke-width="1" fill="none" opacity="0.5"/>
+            </g>
+
+            <!-- Right leaf -->
+            <g class="leaf-group" style="animation-delay: -2s;">
+              <path d="M80 95 Q100 80 110 60 Q95 75 80 88" fill="#8BBF7C" opacity="0.85"/>
+              <path d="M80 95 Q98 78 108 62" stroke="#6B8F5E" stroke-width="1" fill="none" opacity="0.5"/>
+            </g>
+
+            <!-- Small top leaf (new growth) -->
+            <path d="M80 85 Q75 72 72 62 Q80 70 84 80" fill="#A0D492" opacity="0.8"/>
+
+            <!-- Gold sparkle -->
+            <g class="sparkle">
+              <path d="M105 45 L107 40 L109 45 L114 47 L109 49 L107 54 L105 49 L100 47 Z" fill="#D4A843"/>
+            </g>
+
+            <!-- Small sparkle -->
+            <g class="sparkle" style="animation-delay: -1.5s;">
+              <path d="M55 55 L56 52 L57 55 L60 56 L57 57 L56 60 L55 57 L52 56 Z" fill="#D4A843" opacity="0.6"/>
+            </g>
+          </svg>
+        </div>
+
+        <h1>This content is coming soon.</h1>
+        <p>This spark is still being written. Great things take a little time to bloom.</p>
+        <a href="../blog.html" class="btn btn-outline">Back to Sparks</a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand-row">
+          <span class="lighthouse-icon" aria-hidden="true">&#10022;</span>
+          <span class="footer-brand">Amplify Light</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/lizellis11/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Amplify Light. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
