@@ -1,5 +1,5 @@
 /* ============================================
-   AMPLIFY LIGHT — Main JavaScript
+   RADICAL HOPE — Main JavaScript
    Handles: mobile menu, smooth scrolling, form
    ============================================ */
 
